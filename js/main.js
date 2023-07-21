@@ -44,8 +44,8 @@ quoteInputBox.addEventListener("input", () => {
 
   total = arrayQuote.length;
 
-  wordCount = quoteInputBox.value.split("").length;
-  const progress = wordCount / total;
+  let count = quoteInputBox.value.split("").length;
+  const progress = count / total;
   progressBar.style.width = 100 - (progress * 100) + "%";
 
   arrayQuote.forEach((characterSpan, index) => {
