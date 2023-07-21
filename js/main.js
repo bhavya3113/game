@@ -36,7 +36,7 @@ quoteInputBox.addEventListener("input", () => {
   const arrayQuote = quoteDisplay.querySelectorAll("span");
   const arrayInput = quoteInputBox.value.split("");
   let isAllCorrect = true;
-
+ let flag = false;
   if (isFirstInput) {
     startTimer();
     isFirstInput = false;
@@ -61,10 +61,11 @@ quoteInputBox.addEventListener("input", () => {
     } else {
       characterSpan.classList.remove("success");
       characterSpan.classList.add("failure");
+      flag = true;
       isAllCorrect = false;
     }
   });
-  if (isAllCorrect) {
+  if (isAllCorrect && !flag) {
     wordCount += quoteInputBox.value.split(" ").length;
     renderQuoteToDisplay();
     quoteInputBox.value = "";
