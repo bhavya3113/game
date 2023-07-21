@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SpeedTyping</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+    <div class="result-box">
+      <span class="green" id="new-high-score" style ="display: none">New High Score Achieved</span>
+      <h1>Your typing speed is <span id="wpm"></span> WPM</h1>
+      <h2>This speed falls under the <br><span id="category"></span> category</h2>
+      <div class="replay-box">
+        <a href="index.html">
+          <h3>Restart</h3>
+        </a>
+      </div>
+    </div>
+    <header>
+      <div class="title-box">
+        <h1 class="title">Typing Game</h1>
+      </div>
+      <div class="replay-box">
+        <a href="index.html">
+          <h3>Restart</h3>
+        </a>
+      </div>
+    </header>
+    
+    <div id="timer">
+      <div class="timer-box">
+          <h3>Timer<br><span>(in seconds)</span></h3>
+          <div class="timer">
+              <h1 id="timeLeft">60</h1>
+          </div>
+      </div>
+     
+       <!-- <div class="highscore-box">
+          <h3>wpm:</h3>
+          <div class="highscore">
+              <h1><span id="score"></span>WPM</h1>
+          </div>
+      </div> -->
+      <div class="highscore-box">
+          <h3>High Score</h3>
+          <div class="highscore">
+              <h1><span id="score"></span>WPM</h1>
+          </div>
+      </div>
+    </div>
+    <div id="progress-bar">
+      <div id="progress">Progress</div>
+    </div>
+    <div>
+      
+    </div>
+    <section>
+
+      <div class="wrapper">
+        <div class="display-box" id="display">
+          Some text here. Lorem ipsum, dolor sit amet consectetur adipisicing
+          elit. Perspiciatis excepturi repellendus quaerat!
+        </div>
+        <textarea
+          name=""
+          id=""
+          cols="30"
+          rows="10"
+          class="input-box"
+          autofocus
+        ></textarea>
+      </div>
+      
+    </section>
+    <script defer src="./js/main.js"></script>
+  </body>
+</html>
